@@ -229,7 +229,7 @@ namespace BookStore.Forms
                 return;
             }
             _selectedProduct = product;
-            foreach (Control control in flowProducts.Controls)
+            foreach (var ctrl in this.Controls)
             {
                 Panel row = control as Panel;
                 if (row == null)
